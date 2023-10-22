@@ -17,7 +17,6 @@ const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
 // Configure AWS SDK with your credentials and region
-
 const s3Client = new S3Client({
   region: 'us-east-1', // Change to your desired region
   credentials: {
